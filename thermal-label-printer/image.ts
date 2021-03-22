@@ -23,6 +23,5 @@ for (let y = 0; y < height; y++) {
       imageData[y][x] = alpha !== 0 && (r < 255 || g < 255 || b < 255) ? 1 : 0;
     }
 }
-console.log(imageData)
 
 export default imageData;
