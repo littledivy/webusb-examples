@@ -2,7 +2,10 @@ import { reset, setCharacterStyle, printImage } from "https://raw.githubusercont
 import imageData from "./image.ts";
 
 const devices = await navigator.usb.getDevices();
-const device = devices[0];
+const selector = devices.map((d, i) => `${i}) ${d.productName}`).join("\n");
+const idx = prompt(selector);
+const device = devices[Number(idx)];
+
 
 for (const config of device.configurations) {
     for (const iface of config.interfaces) {
