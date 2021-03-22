@@ -6,6 +6,7 @@ const selector = devices.map((d, i) => `${i}) ${d.productName}`).join("\n");
 const idx = prompt(selector);
 const device = devices[Number(idx)];
 
+await device.open();
 
 for (const config of device.configurations) {
     for (const iface of config.interfaces) {
