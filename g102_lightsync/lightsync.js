@@ -1,5 +1,5 @@
 // Prorgramming Logitech G102 Lightsync devices via WebUSB.
-
+//
 // NOTE: HID Devices need to be detached from their kernel drivers. This functionality is not provided by WebUSB due to platform compatibility issues.
 // See https://bugs.chromium.org/p/chromium/issues/detail?id=679314#c4
 //
