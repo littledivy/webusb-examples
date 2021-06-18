@@ -44,6 +44,7 @@ async function setSolid(color) {
     value: wValue,
     index: wIndex,
   }, fromHexString(command));
+
   await dev.transferIn(2, 20);
 }
 
