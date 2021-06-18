@@ -23,10 +23,9 @@ await device.controlTransferOut({
 
 const decoder = new TextDecoder();
 while (true) {
-  const action =
-    prompt(
-      decoder.decode(new Uint8Array((await device.transferIn(5, 64)).data)),
-    ) || "exit";
+  const action = prompt(
+    decoder.decode(new Uint8Array((await device.transferIn(5, 64)).data)),
+  ) || "exit";
   if (action.toLowerCase() == "exit") break;
   const data = new TextEncoder().encode(action);
   await device.transferOut(4, data);
