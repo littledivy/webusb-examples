@@ -1,7 +1,7 @@
 ## `webusb-examples`
 
 > See pull request
-> [deno/denoland#9550](https://github.com/denoland/deno/pull/9550) for the
+> [deno/denoland#10912](https://github.com/denoland/deno/pull/10912) for the
 > WebUSB implementation status.
 
 Examples for using the WebUSB API with Deno. Most of the examples here are based
